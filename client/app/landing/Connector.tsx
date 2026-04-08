@@ -119,7 +119,7 @@ export default function LandingPage() {
         </div>
 
         <div className="hero-accent mt-20 w-full max-w-4xl h-64 bg-linear-to-r from-sky-50 to-cyan-50 rounded-3xl border border-white shadow-2xl flex items-center justify-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px]"></div>
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}

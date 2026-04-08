@@ -17,7 +17,6 @@ import {
 } from "lucide-react";
 import { FaRegHandshake } from "react-icons/fa";
 
-// Dummy Data for Employer's Active Listings
 const ACTIVE_LISTINGS = [
   {
     id: 1,
@@ -41,7 +40,6 @@ const ACTIVE_LISTINGS = [
   },
 ];
 
-// Dummy Data for Recent Applicants
 const RECENT_APPLICANTS = [
   { id: 1, name: "Rahul Bisht", role: "Front Desk Manager", match: "95%" },
   { id: 2, name: "Priya Sharma", role: "Housekeeping Staff", match: "88%" },
@@ -51,7 +49,6 @@ const RECENT_APPLICANTS = [
 export default function EmployerDashboard() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-cyan-400 selection:text-white">
-      {/* AUTH NAV BAR */}
       <nav className="sticky top-0 w-full bg-white border-b border-slate-200 z-40 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2 text-sky-600 font-bold text-xl tracking-tight">
@@ -77,9 +74,7 @@ export default function EmployerDashboard() {
       </nav>
 
       <main className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
-        {/* LEFT COLUMN: Main Management Feed */}
         <div className="lg:col-span-8 space-y-8">
-          {/* Welcome & High-Level Stats */}
           <div>
             <h1 className="text-2xl font-extrabold text-sky-950 mb-6">
               Welcome back, Lakeview!
@@ -145,7 +140,6 @@ export default function EmployerDashboard() {
             </div>
           </div>
 
-          {/* Active Listings Section */}
           <div>
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-xl font-bold text-sky-950">
@@ -221,9 +215,7 @@ export default function EmployerDashboard() {
           </div>
         </div>
 
-        {/* RIGHT COLUMN: Sidebar */}
         <div className="lg:col-span-4 space-y-6">
-          {/* Primary Action Widget */}
           <div className="bg-gradient-to-br from-sky-500 to-cyan-500 rounded-3xl p-1 shadow-lg shadow-sky-500/20 relative overflow-hidden">
             <div className="absolute top-0 right-0 p-8 opacity-10">
               <Briefcase size={120} />
@@ -240,7 +232,6 @@ export default function EmployerDashboard() {
             </div>
           </div>
 
-          {/* Recent Applicants Widget */}
           <div className="bg-white rounded-3xl p-6 border border-slate-100 shadow-sm">
             <div className="flex justify-between items-center mb-6">
               <h3 className="font-bold text-sky-950">Recent Applications</h3>
@@ -276,7 +267,6 @@ export default function EmployerDashboard() {
             </button>
           </div>
 
-          {/* Upgrade / SaaS Teaser Widget */}
           <div className="bg-sky-950 rounded-3xl p-6 text-white text-center relative overflow-hidden">
             <div className="absolute -top-12 -left-12 w-32 h-32 bg-cyan-400/20 blur-2xl rounded-full pointer-events-none"></div>
             <div className="inline-block bg-sky-900 border border-sky-800 text-cyan-400 text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">

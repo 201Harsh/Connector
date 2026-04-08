@@ -17,7 +17,6 @@ import {
 } from "lucide-react";
 import { FaRegHandshake } from "react-icons/fa";
 
-// Dummy Data for Admin Overview
 const PLATFORM_STATS = [
   {
     title: "Total Seekers",
@@ -53,7 +52,6 @@ const PLATFORM_STATS = [
   },
 ];
 
-// Dummy Data for Pending Approvals
 const PENDING_EMPLOYERS = [
   {
     id: 1,

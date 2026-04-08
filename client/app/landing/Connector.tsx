@@ -110,10 +110,10 @@ export default function LandingPage() {
           ref={addToRefs}
           className="mt-10 flex flex-col sm:flex-row gap-4 w-full justify-center"
         >
-          <button className="bg-sky-500 text-white font-semibold px-8 py-4 rounded-full flex items-center justify-center gap-2 text-lg shadow-xl shadow-sky-500/20 hover:bg-sky-600 hover:-translate-y-1 transition-all">
+          <button className="cursor-pointer bg-sky-500 text-white font-semibold px-8 py-4 rounded-full flex items-center justify-center gap-2 text-lg shadow-xl shadow-sky-500/20 hover:bg-sky-600 hover:-translate-y-1 transition-all">
             I am looking for a job <Search size={20} />
           </button>
-          <button className="bg-white text-sky-600 border-2 border-sky-100 font-semibold px-8 py-4 rounded-full flex items-center justify-center gap-2 text-lg hover:border-sky-500 hover:bg-sky-50 transition-all">
+          <button className="cursor-pointer bg-white text-sky-600 border-2 border-sky-100 font-semibold px-8 py-4 rounded-full flex items-center justify-center gap-2 text-lg hover:border-sky-500 hover:bg-sky-50 transition-all">
             I want to hire <Users size={20} />
           </button>
         </div>

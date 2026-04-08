@@ -95,7 +95,7 @@ export default function LandingPage() {
           className="text-5xl md:text-7xl font-extrabold text-blue-900 tracking-tight leading-tight max-w-4xl"
         >
           Bridging the gap between <br className="hidden md:block" />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500">
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-emerald-500">
             talent and opportunity.
           </span>
         </h1>
@@ -121,8 +121,8 @@ export default function LandingPage() {
           </button>
         </div>
 
-        <div className="hero-accent mt-20 w-full max-w-4xl h-64 bg-gradient-to-r from-blue-50 to-emerald-50 rounded-3xl border border-white shadow-2xl flex items-center justify-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+        <div className="hero-accent mt-20 w-full max-w-4xl h-64 bg-linear-to-r from-blue-50 to-emerald-50 rounded-3xl border border-white shadow-2xl flex items-center justify-center relative overflow-hidden">
+          <div className="absolute inset-0 bg-[linear-linear(to_right,#80808012_1px,transparent_1px),linear-linear(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px]"></div>
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -253,7 +253,7 @@ export default function LandingPage() {
             initial={{ scale: 0.9, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-[3rem] p-12 md:p-20 text-white shadow-2xl relative overflow-hidden"
+            className="bg-linear-to-br from-blue-900 to-blue-800 rounded-[3rem] p-12 md:p-20 text-white shadow-2xl relative overflow-hidden"
           >
             <div className="absolute -top-24 -right-24 w-96 h-96 bg-emerald-500/20 blur-3xl rounded-full"></div>
             <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-500/20 blur-3xl rounded-full"></div>

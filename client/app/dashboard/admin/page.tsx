@@ -81,7 +81,6 @@ const PENDING_EMPLOYERS = [
 export default function AdminDashboard() {
   return (
     <div className="min-h-screen bg-slate-100 font-sans text-slate-900 selection:bg-cyan-400 selection:text-white flex flex-col md:flex-row">
-      {/* ADMIN SIDEBAR (Desktop) */}
       <aside className="hidden md:flex w-64 bg-sky-950 text-sky-100 flex-col h-screen sticky top-0 border-r border-sky-900 shadow-2xl">
         <div className="h-20 flex items-center px-6 border-b border-sky-800/50 mb-6">
           <div className="flex items-center gap-2 text-white font-bold text-xl tracking-tight">
@@ -115,9 +114,7 @@ export default function AdminDashboard() {
         </div>
       </aside>
 
-      {/* MAIN CONTENT AREA */}
       <main className="flex-1 flex flex-col h-screen overflow-y-auto">
-        {/* Top Header */}
         <header className="h-20 bg-white border-b border-slate-200 px-8 flex items-center justify-between sticky top-0 z-10 shadow-sm">
           <h1 className="text-xl font-bold text-sky-950">Platform Overview</h1>
           <div className="flex items-center gap-6">
@@ -143,7 +140,6 @@ export default function AdminDashboard() {
         </header>
 
         <div className="p-8 space-y-8 max-w-7xl mx-auto w-full">
-          {/* Stats Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {PLATFORM_STATS.map((stat, i) => (
               <motion.div
@@ -174,7 +170,6 @@ export default function AdminDashboard() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Pending Approvals (Actionable) */}
             <div className="lg:col-span-2 bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
               <div className="p-6 border-b border-slate-100 flex justify-between items-center">
                 <h2 className="text-lg font-bold text-sky-950 flex items-center gap-2">
@@ -218,7 +213,6 @@ export default function AdminDashboard() {
               </div>
             </div>
 
-            {/* System Activity Log */}
             <div className="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
               <div className="p-6 border-b border-slate-100">
                 <h2 className="text-lg font-bold text-sky-950">

@@ -101,7 +101,7 @@ const Header = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setMobileMenuOpen(false)}
-              className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[100] md:hidden"
+              className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-100 md:hidden"
             />
 
             <motion.div
@@ -109,7 +109,7 @@ const Header = () => {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 h-full w-[80%] max-w-[320px] bg-white border-l border-slate-100 z-[101] flex flex-col p-8 shadow-2xl md:hidden"
+              className="fixed top-0 right-0 h-full w-[80%] max-w-[320px] bg-white border-l border-slate-100 z-101 flex flex-col p-8 shadow-2xl md:hidden"
             >
               <div className="flex justify-between items-center mb-12">
                 <Link href="/" onClick={() => setMobileMenuOpen(false)}>

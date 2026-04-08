@@ -14,6 +14,7 @@ import {
 import { FaRegHandshake } from "react-icons/fa";
 import Link from "next/link";
 import Header from "../Components/Header";
+import Footer from "../Components/Footer";
 
 export default function LandingPage() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -251,18 +252,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <footer className="bg-slate-50 py-12 border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-2 text-sky-950 font-bold text-xl">
-            <FaRegHandshake className="text-cyan-500" />
-            Connector
-          </div>
-          <p className="text-slate-500 text-sm">
-            Empowering Nainital's workforce. Building sustainable local
-            economies.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

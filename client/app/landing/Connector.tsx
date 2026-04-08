@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { FaRegHandshake } from "react-icons/fa";
 import Link from "next/link";
+import Header from "../Components/Header";
 
 export default function LandingPage() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -49,6 +50,8 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-cyan-400 selection:text-white overflow-x-hidden">
+      <Header />
+
       <section
         ref={heroRef}
         className="pt-40 pb-20 px-6 max-w-7xl mx-auto flex flex-col items-center text-center"

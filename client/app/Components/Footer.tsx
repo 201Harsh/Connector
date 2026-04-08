@@ -9,7 +9,6 @@ const Footer = () => {
     <footer className="bg-sky-950 text-sky-100 pt-20 pb-10 border-t border-sky-900 selection:bg-cyan-400 selection:text-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          {/* Brand Column */}
           <div className="space-y-6 lg:col-span-1">
             <Link href="/">
               <div className="flex items-center gap-2 text-white font-bold text-2xl tracking-tight cursor-pointer">
@@ -24,7 +23,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* For Seekers */}
           <div>
             <h3 className="text-white font-bold mb-6 tracking-wide">
               For Seekers
@@ -65,7 +63,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* For Employers */}
           <div>
             <h3 className="text-white font-bold mb-6 tracking-wide">
               For Employers
@@ -109,7 +106,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact & Legal */}
           <div>
             <h3 className="text-white font-bold mb-6 tracking-wide">Connect</h3>
             <ul className="space-y-4 text-sm text-sky-300">
@@ -129,7 +125,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="pt-8 border-t border-sky-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-sky-400">
           <p>
             © {new Date().getFullYear()} Connector Platform. All rights

@@ -30,14 +30,6 @@ export default function LandingPage() {
         ease: "power3.out",
         delay: 0.2,
       });
-
-      gsap.to(".hero-accent", {
-        y: -10,
-        repeat: -1,
-        yoyo: true,
-        duration: 2,
-        ease: "sine.inOut",
-      });
     }, heroRef);
 
     return () => ctx.revert();

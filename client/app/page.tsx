@@ -1,7 +1,11 @@
-import React from "react";
+import Connector from "./landing/Connector";
 
 const page = () => {
-  return <div>page</div>;
+  return (
+    <>
+      <Connector />
+    </>
+  );
 };
 
 export default page;

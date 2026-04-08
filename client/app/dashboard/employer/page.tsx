@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   Briefcase,
@@ -216,7 +215,7 @@ export default function EmployerDashboard() {
         </div>
 
         <div className="lg:col-span-4 space-y-6">
-          <div className="bg-gradient-to-br from-sky-500 to-cyan-500 rounded-3xl p-1 shadow-lg shadow-sky-500/20 relative overflow-hidden">
+          <div className="bg-linear-to-br from-sky-500 to-cyan-500 rounded-3xl p-1 shadow-lg shadow-sky-500/20 relative overflow-hidden">
             <div className="absolute top-0 right-0 p-8 opacity-10">
               <Briefcase size={120} />
             </div>

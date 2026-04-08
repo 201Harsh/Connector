@@ -38,7 +38,7 @@ export default function SignupPage() {
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="w-full flex items-center justify-center gap-3 bg-white border-2 border-slate-200 text-slate-700 font-bold text-lg py-4 px-6 rounded-full hover:border-sky-200 hover:bg-sky-50 transition-colors shadow-sm"
+            className="cursor-pointer w-full flex items-center justify-center gap-3 bg-white border-2 border-slate-200 text-slate-700 font-bold text-lg py-4 px-6 rounded-full hover:border-sky-400 hover:bg-sky-100 transition-colors shadow-sm"
           >
             <FcGoogle className="text-2xl" />
             Continue with Google

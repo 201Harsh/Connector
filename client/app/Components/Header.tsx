@@ -16,7 +16,6 @@ const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useGSAP(() => {
-    // Adjusted yPercent to -100 for a flush top-0 full-width header
     const showAnim = gsap
       .from(headerRef.current, {
         yPercent: -100,
@@ -50,7 +49,7 @@ const Header = () => {
       {/* Desktop & Main Header */}
       <header
         ref={headerRef}
-        className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-100 shadow-sm"
+        className="fixed top-0 w-full bg-white/30 backdrop-blur-sm z-50 border-b border-slate-100 shadow-sm"
       >
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           {/* Logo */}

@@ -16,7 +16,6 @@ import {
 } from "lucide-react";
 import { FaRegHandshake } from "react-icons/fa";
 
-// Dummy Data tailored to Nainital Local Businesses
 const LOCAL_JOBS = [
   {
     id: 1,
@@ -69,7 +68,6 @@ export default function SeekerDashboard() {
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-cyan-400 selection:text-white">
-      {/* AUTH NAV BAR */}
       <nav className="sticky top-0 w-full bg-white border-b border-slate-200 z-40 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2 text-sky-600 font-bold text-xl tracking-tight">
@@ -96,9 +94,7 @@ export default function SeekerDashboard() {
       </nav>
 
       <main className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
-        {/* LEFT COLUMN: Main Job Feed */}
         <div className="lg:col-span-8 space-y-6">
-          {/* Header & Search */}
           <div className="bg-white rounded-3xl p-6 md:p-8 shadow-sm border border-slate-100">
             <h1 className="text-2xl font-extrabold text-sky-950 mb-2">
               Find Local Work
@@ -124,7 +120,6 @@ export default function SeekerDashboard() {
               </button>
             </div>
 
-            {/* Quick Filters */}
             <div className="flex gap-3 mt-6 overflow-x-auto pb-2 scrollbar-hide">
               {[
                 "All Jobs",
@@ -148,7 +143,6 @@ export default function SeekerDashboard() {
             </div>
           </div>
 
-          {/* Job Feed */}
           <div className="space-y-4">
             {LOCAL_JOBS.map((job, index) => (
               <motion.div
@@ -212,9 +206,7 @@ export default function SeekerDashboard() {
           </div>
         </div>
 
-        {/* RIGHT COLUMN: Sidebar */}
         <div className="lg:col-span-4 space-y-6">
-          {/* Profile Completion Widget */}
           <div className="bg-sky-950 rounded-3xl p-6 text-white relative overflow-hidden shadow-xl shadow-sky-900/20">
             <div className="absolute -right-8 -top-8 w-32 h-32 bg-cyan-400/20 blur-2xl rounded-full"></div>
             <h3 className="text-lg font-bold mb-2 relative z-10">
@@ -237,7 +229,6 @@ export default function SeekerDashboard() {
             </button>
           </div>
 
-          {/* Alert Widget */}
           <div className="bg-white rounded-3xl p-6 border border-slate-100 shadow-sm">
             <h3 className="font-bold text-sky-950 mb-4 flex items-center gap-2">
               <Bell className="text-cyan-500" size={18} /> Job Alerts

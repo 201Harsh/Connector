@@ -3,7 +3,7 @@ import { FaRegHandshake } from "react-icons/fa";
 const Header = () => {
   return (
     <>
-      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-100 shadow-sm">
+      <nav className="fixed top-0 w-full bg-white/30 backdrop-blur-sm z-50 border-b border-slate-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-2 text-sky-600 font-bold text-2xl tracking-tight">
             <FaRegHandshake className="text-cyan-500 text-3xl" />

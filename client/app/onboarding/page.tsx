@@ -107,7 +107,7 @@ export default function OnboardingFlow() {
             >
               <button
                 onClick={() => setStep(1)}
-                className="flex items-center gap-2 text-slate-400 hover:text-sky-600 font-medium mb-8 transition-colors"
+                className="cursor-pointer flex items-center gap-2 text-slate-400 hover:text-sky-600 font-medium mb-8 transition-colors"
               >
                 <ArrowLeft size={18} /> Back to roles
               </button>
@@ -293,7 +293,7 @@ export default function OnboardingFlow() {
                 )}
 
                 <div className="pt-6 mt-6 border-t border-slate-100">
-                  <button className="w-full bg-sky-500 text-white font-bold text-lg py-4 rounded-xl shadow-lg shadow-sky-500/20 hover:bg-sky-600 transition-all active:scale-[0.98] flex justify-center items-center gap-2">
+                  <button className="cursor-pointer w-full bg-sky-500 text-white font-bold text-lg py-4 rounded-xl shadow-lg shadow-sky-500/20 hover:bg-sky-600 transition-all active:scale-[0.98] flex justify-center items-center gap-2">
                     <CheckCircle2 size={20} />
                     {role === "seeker"
                       ? "Create Seeker Profile"

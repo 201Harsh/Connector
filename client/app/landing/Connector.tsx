@@ -17,7 +17,6 @@ export default function LandingPage() {
   const heroRef = useRef<HTMLDivElement>(null);
   const textRefs = useRef<HTMLHeadingElement[]>([]);
 
-  // GSAP Animation for Hero Section
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.from(textRefs.current, {
@@ -49,7 +48,6 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-emerald-400 selection:text-white overflow-x-hidden">
-      {/* Navbar */}
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-2 text-blue-700 font-bold text-2xl tracking-tight">
@@ -84,7 +82,6 @@ export default function LandingPage() {
         </div>
       </nav>
 
-      {/* Hero Section */}
       <section
         ref={heroRef}
         className="pt-40 pb-20 px-6 max-w-7xl mx-auto flex flex-col items-center text-center"
@@ -124,7 +121,6 @@ export default function LandingPage() {
           </button>
         </div>
 
-        {/* Floating Abstract Element */}
         <div className="hero-accent mt-20 w-full max-w-4xl h-64 bg-gradient-to-r from-blue-50 to-emerald-50 rounded-3xl border border-white shadow-2xl flex items-center justify-center relative overflow-hidden">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
           <motion.div
@@ -146,7 +142,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* The Problem Section */}
       <section id="problem" className="py-24 bg-blue-900 text-white relative">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div
@@ -180,7 +175,6 @@ export default function LandingPage() {
               </ul>
             </div>
 
-            {/* Stat Card */}
             <div className="bg-blue-800 border border-blue-700 p-10 rounded-3xl relative overflow-hidden">
               <div className="absolute top-0 right-0 p-8 opacity-10">
                 <Users size={120} />
@@ -202,7 +196,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* The Solution / Features */}
       <section id="solution" className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
@@ -254,7 +247,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Impact Section */}
       <section id="impact" className="py-24 bg-white border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <motion.div
@@ -283,7 +275,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Simple Footer */}
       <footer className="bg-slate-50 py-12 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2 text-blue-900 font-bold text-xl">

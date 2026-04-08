@@ -25,7 +25,6 @@ export default function OnboardingFlow() {
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col items-center py-12 px-6 selection:bg-cyan-400 selection:text-white">
-      {/* Top Navigation / Brand */}
       <div className="w-full max-w-4xl flex justify-between items-center mb-12">
         <div className="flex items-center gap-2 text-sky-600 font-bold text-xl tracking-tight">
           <FaRegHandshake className="text-cyan-500 text-2xl" />
@@ -38,7 +37,6 @@ export default function OnboardingFlow() {
 
       <div className="w-full max-w-4xl relative">
         <AnimatePresence mode="wait">
-          {/* STEP 1: ROLE SELECTION */}
           {step === 1 && (
             <motion.div
               key="step1"
@@ -57,10 +55,9 @@ export default function OnboardingFlow() {
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 w-full max-w-3xl">
-                {/* Seeker Card */}
                 <button
                   onClick={() => handleRoleSelect("seeker")}
-                  className="group bg-white border-2 border-slate-100 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10 rounded-3xl p-8 text-left transition-all duration-300 relative overflow-hidden"
+                  className="cursor-pointer group bg-white border-2 border-slate-100 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10 rounded-3xl p-8 text-left transition-all duration-300 relative overflow-hidden"
                 >
                   <div className="w-16 h-16 bg-sky-50 text-sky-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <User size={32} />
@@ -77,10 +74,9 @@ export default function OnboardingFlow() {
                   </div>
                 </button>
 
-                {/* Employer Card */}
                 <button
                   onClick={() => handleRoleSelect("employer")}
-                  className="group bg-white border-2 border-slate-100 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10 rounded-3xl p-8 text-left transition-all duration-300 relative overflow-hidden"
+                  className="cursor-pointer group bg-white border-2 border-slate-100 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10 rounded-3xl p-8 text-left transition-all duration-300 relative overflow-hidden"
                 >
                   <div className="w-16 h-16 bg-cyan-50 text-cyan-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <Building2 size={32} />
@@ -100,7 +96,6 @@ export default function OnboardingFlow() {
             </motion.div>
           )}
 
-          {/* STEP 2: PROFILE FILING */}
           {step === 2 && (
             <motion.div
               key="step2"
@@ -129,7 +124,6 @@ export default function OnboardingFlow() {
               </p>
 
               <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-                {/* --- SEEKER FORM --- */}
                 {role === "seeker" && (
                   <>
                     <div className="grid md:grid-cols-2 gap-6">
@@ -225,7 +219,6 @@ export default function OnboardingFlow() {
                   </>
                 )}
 
-                {/* --- EMPLOYER FORM --- */}
                 {role === "employer" && (
                   <>
                     <div className="space-y-2">
